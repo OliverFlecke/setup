@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+path=~/
+cp ./.vi* $path/
+chmod 0777 $path/.vi*
+
+cp ./.bashrc $path/
+chmod 0777 $path/.bashrc
+
+# Copy git config
+cp -f ./.gitconfig ~/
