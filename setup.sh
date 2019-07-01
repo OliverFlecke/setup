@@ -2,9 +2,9 @@
 
 setxkbmap dvorak
 setxkbmap -option caps:escape
-mkdir ~/packages
 
-sudo apt install -y ddgr apt-transport-https gnupg2 vlc
+sudo apt install -y gnupg2 vlc
+sudo apt install firefox-esr -y
 sudo snap install spotify
 
 # posh-git 
@@ -17,11 +17,6 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 
 sudo apt-get update
 sudo apt-get install code -y
-
-# git bash completion
-sudo apt-get install git-core bash-completion -y
-# posh-git for linux
-wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O ~/pagkages/git-prompt.sh
 
 # Adapta Dark theme
 sudo apt-add-repository ppa:tista/adapta -y
