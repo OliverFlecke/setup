@@ -3,6 +3,8 @@
 setxkbmap dvorak
 setxkbmap -option caps:escape
 
+sh ./setup-minimal.sh
+
 sudo apt install -y gnupg2 vlc
 sudo apt install firefox-esr -y
 sudo snap install spotify

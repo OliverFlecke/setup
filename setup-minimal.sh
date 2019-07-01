@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "Running minimal setup"
 
 echo "Copying config files"
 sh ./copyfiles
