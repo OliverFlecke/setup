@@ -8,7 +8,7 @@ echo "Installing tools"
 sudo apt-get install curl wget tree dos2unix apt-transport-https ddgr -y
 
 sudo apt-get install cmake make python3 python3-dev -y
-sudo apt-get install git hub bash-completion -y
+sudo apt-get install git hub bash-completion xclip -y
 
 # Install vim and extension manager
 sudo apt-get install vim-gtk -y
