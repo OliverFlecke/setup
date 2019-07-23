@@ -3,3 +3,5 @@ cmake
 tree
 hub
 git
+cocoapods
+wget
