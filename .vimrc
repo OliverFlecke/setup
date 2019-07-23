@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggl' }
 
-Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme', { 'do': './install.py' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

@@ -7,9 +7,7 @@ fi
 
 unset color_prompt force_color_prompt
 
-alias ll='ls -lFh'
-setxkbmap -option caps:escape
-setxkbmap dvorak
+alias ll='ls -lFha'
 
 source /usr/share/bash-completion/completions/git
 
