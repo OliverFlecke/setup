@@ -9,6 +9,10 @@ ZSH_THEME="agnoster"
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git cp)
+plugins=(
+    git 
+    cp
+    autojump
+)
 
 source $ZSH/oh-my-zsh.sh
