@@ -4,7 +4,7 @@
 [color]
     status = always
 [core]
-    editor = vim
+    editor = nvim
     autocrlf = false
     attributesfile = ~/.gitattributes
     eol = lf
@@ -43,6 +43,10 @@
     ls  = log --graph --pretty=format:'%Cred%h%Creset %Cgreen%>(16)%cr%Creset - %<(80,trunc)%s %C(yellow)%d%Creset' --abbrev-commit --date=relative
 
     vs  = !git ls $1..$(git branch-name)
+
+    hide = update-index --assume-unchanged
+    unhide = update-index --no-assume-unchanged
+    hidden = ! git ls-files -v | grep '^h' | cut -c3-
 [hub]
     protocol = https
 [credential]

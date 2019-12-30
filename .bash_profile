@@ -28,3 +28,5 @@ if [ -r ~/.bashrc ]; then
 fi
 
 export LC_ALL=en_US.UTF-8
+
+export PATH="$HOME/.cargo/bin:$PATH"
