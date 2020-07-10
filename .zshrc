@@ -21,3 +21,4 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias tre='tree -I "bin|obj|wwwroot"'
+

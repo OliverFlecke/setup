@@ -1,6 +1,5 @@
 [user]
     name = Oliver Fleckenstein
-    email = Oliverfl@live.dk
 [color]
     status = always
 [core]
@@ -18,10 +17,14 @@
     cmd = code --wait $MERGED
 [alias]
     co   = checkout
+    sw   = switch
     cm   = commit
     st   = status
     br   = branch
     last = log -n 1
+    ldiff = diff HEAD~1 HEAD
+
+    cmreset = commit --amend --reset-author --no-edit
 
     dl   = diff HEAD HEAD^
     di   = "diff --word-diff=color --minimal --word-diff-regex='([0-9@A-Za-z]+|[^0-9@A-Za-z()]+|[()])'"
@@ -47,6 +50,9 @@
     hide = update-index --assume-unchanged
     unhide = update-index --no-assume-unchanged
     hidden = ! git ls-files -v | grep '^h' | cut -c3-
+
+    clean-branches = "!git branch | grep -v master | xargs git branch -d"
+    open = !git remote get-url origin | xargs open "$1"
 [hub]
     protocol = https
 [credential]
