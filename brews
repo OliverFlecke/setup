@@ -8,3 +8,9 @@ wget
 nvm
 ddgr
 autojump
+bat
+exa
+fd
+procs
+tokei
+bandwhich

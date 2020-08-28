@@ -20,5 +20,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-alias tre='tree -I "bin|obj|wwwroot"'
-
+alias tre='tree -I "bin|obj|wwwroot|node_modules"'
+alias ll='exa -l'
+alias curltime="curl -w \"@$HOME/tools/.curl-format.txt\" -o NUL -s "
+alias c='clipcopy'
+alias guid="uuidgen | tr '[:upper:]' '[:lower:]'"
