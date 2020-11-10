@@ -4,14 +4,15 @@ set number relativenumber
 
 " Formatting
 set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=2
+set shiftwidth=2
 
 set encoding=utf-8
 
 set showmode
 set incsearch
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣ 
 
 colo koehler
 syntax on

@@ -25,3 +25,15 @@ alias ll='exa -l'
 alias curltime="curl -w \"@$HOME/tools/.curl-format.txt\" -o NUL -s "
 alias c='clipcopy'
 alias guid="uuidgen | tr '[:upper:]' '[:lower:]'"
+alias copyip="curl -L ipecho.net/plain | clipcopy"
+alias today='date -u +"%Y-%m-%d"'
+alias pj='python3 -m json.tool'
+
+_dotnet_zsh_complete()
+{
+    local completions=("$(dotnet complete "$words")")    
+    reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
+
