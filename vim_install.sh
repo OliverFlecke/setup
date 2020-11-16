@@ -15,6 +15,10 @@ if [ -d ~/.config ]; then
     mkdir ~/.config
 fi
 
+if [ -d ~/.vim ]; then
+	mkdir ~/.vim
+fi
+
 ln -s ~/.vim ~/.config/nvim
 ln -f .vimrc ~/
 ln -f .vimrc ~/.vim/init.vim
