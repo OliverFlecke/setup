@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
 export LC_ALL=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
