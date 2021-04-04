@@ -28,6 +28,7 @@ alias guid="uuidgen | tr '[:upper:]' '[:lower:]'"
 alias copyip="curl -L ipecho.net/plain | clipcopy"
 alias today='date -u +"%Y-%m-%d"'
 alias pj='python3 -m json.tool'
+alias rmbo='rm -rf bin/; rm -rf obj/'
 
 _dotnet_zsh_complete()
 {

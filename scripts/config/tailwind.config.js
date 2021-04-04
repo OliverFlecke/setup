@@ -6,14 +6,11 @@ module.exports = {
 	purge: {
 		mode: 'all',
 		enable: true,
-		content: ['**/*.html'],
+		content: ['**/*.html', '**/*.tsx'],
 	},
+	darkMode: 'media',
 	theme: {
-		extend: {
-			screens: {
-				dark: { raw: '(prefers-color-scheme: dark)' },
-			},
-		},
+		extend: {},
 	},
 	variants: {},
 	plugins: [],
