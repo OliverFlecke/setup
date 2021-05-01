@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
 dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
-yarn add -D tailwindcss postcss-cli autoprefixer postcss-import postcss-nesting @fullhuman/postcss-purgecss
+yarn add -D tailwindcss postcss-cli autoprefixer postcss-import postcss-nested postcss
 cp $dir/config/postcss.config.js .
 cp $dir/config/tailwind.config.js .
