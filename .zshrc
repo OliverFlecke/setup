@@ -16,6 +16,7 @@ plugins=(
     git 
     cp
     autojump
+		zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
