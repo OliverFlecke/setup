@@ -16,7 +16,6 @@ plugins=(
     git 
     cp
     autojump
-		zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -38,4 +37,5 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
