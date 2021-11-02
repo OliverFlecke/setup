@@ -2,7 +2,9 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
 export LC_ALL=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/oliver/.oh-my-zsh"
@@ -29,6 +31,7 @@ alias copyip="curl -L ipecho.net/plain | clipcopy"
 alias today='date -u +"%Y-%m-%d"'
 alias pj='python3 -m json.tool'
 alias rmbo='rm -rf bin/; rm -rf obj/'
+alias python=/opt/homebrew/Cellar/python@3.10/3.10.0_2/bin/python3
 
 _dotnet_zsh_complete()
 {

@@ -32,30 +32,14 @@ filetype indent on
 autocmd FileType cpp nnoremap <buffer> <F9> :!g++ % && ./a.out <CR>
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
 
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
+endif
+
 " Plugins
 call plug#begin('~/.vim/plugged')
-
-Plug 'Raimondi/delimitMate'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggl' }
-
-" Plug 'valloric/youcompleteme', { 'do': './install.py' }
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-Plug 'terryma/vim-multiple-cursors'
-
-" Language support
-Plug 'plasticboy/vim-markdown'
-Plug 'autozimu/LanguageClient-neovim', {
-			\	'branch': 'next',
-			\ 'tag': '0.1.155',
-			\ 'do': 'bash install.sh',
-			\ }
-Plug 'ionide/Ionide-vim', {
-			\ 'do': 'make fsautocomplete',
-			\ }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
