@@ -1,4 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
+export PATH=/opt/homebrew/Cellar/openjdk/17.0.1_1/bin:$PATH
+export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
 export LC_ALL=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
@@ -15,7 +17,7 @@ ZSH_THEME="agnoster"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
-    git 
+    git
     cp
     autojump
 )
@@ -31,11 +33,12 @@ alias copyip="curl -L ipecho.net/plain | clipcopy"
 alias today='date -u +"%Y-%m-%d"'
 alias pj='python3 -m json.tool'
 alias rmbo='rm -rf bin/; rm -rf obj/'
-alias python=/opt/homebrew/Cellar/python@3.10/3.10.0_2/bin/python3
+#alias python=/opt/homebrew/Cellar/python@3.10/3.10.0_2/bin/python3
+# alias python=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/python3
 
 _dotnet_zsh_complete()
 {
-    local completions=("$(dotnet complete "$words")")    
+    local completions=("$(dotnet complete "$words")")
     reply=( "${(ps:\n:)completions}" )
 }
 
