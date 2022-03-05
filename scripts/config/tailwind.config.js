@@ -1,25 +1,6 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
-	future: {
-		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true,
-	},
-	purge: {
-		mode: 'all',
-		enable: true,
-		content: ['src/**/*.html', 'src/**/*.tsx'],
-	},
-	darkMode: 'class', // or 'media' or 'class'
+	content: ['./pages/**/*.{html,tsx,jsx}', './src/**/*.{jsx,tsx,html}'],
 	theme: {
-		extend: {
-			colors: {
-				lime: colors.lime,
-				amber: colors.amber,
-			},
-		},
-	},
-	variants: {
 		extend: {},
 	},
 	plugins: [],

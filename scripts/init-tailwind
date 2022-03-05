@@ -1,6 +1,17 @@
 #!/usr/bin/env sh
 
+# Simple script to help quickly setup tailwindcss in your project.
+# See https://tailwindcss.com/docs/installation/using-postcss for up-to-date instructions 
+# of setting up tailwindcss.
+
 dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
-yarn add -D tailwindcss postcss-cli autoprefixer postcss-import postcss-nested postcss
+
+npm install --save-dev tailwindcss autoprefixer postcss
+
+# Prettier formatting, including plugin for formatting order of tailwindcss classes
+# https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+npm install --save-dev prettier prettier-plugin-tailwindcss
+
+# Copy config files
 cp $dir/config/postcss.config.js .
 cp $dir/config/tailwind.config.js .
