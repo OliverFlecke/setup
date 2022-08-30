@@ -8,3 +8,4 @@ alias pubip="curl ifconfig.me"
 
 export PATH=~/tools/resharper/:~/tools/TEE-CLC-14.134.0:~/tools:$PATH
 
+. "$HOME/.cargo/env"

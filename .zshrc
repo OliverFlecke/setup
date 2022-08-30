@@ -1,12 +1,12 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
 export PATH=/opt/homebrew/Cellar/openjdk/17.0.1_1/bin:$PATH
 export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
+export PATH=$PATH:$(go env GOPATH)/bin
 export LC_ALL=en_US.UTF-8
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
+#source <(kubectl completion zsh)
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/oliver/.oh-my-zsh"
@@ -33,8 +33,7 @@ alias copyip="curl -L ipecho.net/plain | clipcopy"
 alias today='date -u +"%Y-%m-%d"'
 alias pj='python3 -m json.tool'
 alias rmbo='rm -rf bin/; rm -rf obj/'
-#alias python=/opt/homebrew/Cellar/python@3.10/3.10.0_2/bin/python3
-# alias python=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/python3
+alias vim='nvim'
 
 _dotnet_zsh_complete()
 {
@@ -44,4 +43,7 @@ _dotnet_zsh_complete()
 
 compctl -K _dotnet_zsh_complete dotnet
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
