@@ -2,8 +2,7 @@
 
 -- local lspconfig = require('lspconfig')
 local servers = {
- 'pyright',
+	"pyright",
 }
 
-require'lspconfig'.pyright.setup{}
-
+require("lspconfig").pyright.setup({})
