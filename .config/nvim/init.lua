@@ -2,9 +2,14 @@
 
 require "paq" {
  "savq/paq-nvim";
+ "kyazdani42/nvim-tree.lua";
+ "vim-airline/vim-airline";
+ "vim-airline/vim-airline-themes";
+ "neovim/nvim-lspconfig";
+ "hrsh7th/nvim-compe";
 }
 
-require "nerdtree"
+require "tree"
 require "airline"
 require "lsp"
 require "completion"

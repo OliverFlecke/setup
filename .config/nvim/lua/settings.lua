@@ -11,4 +11,4 @@ vim.o.encoding = 'utf-8'
 
 vim.o.listchars = "eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣"
 
-vim.api.nvim_set_keymap('', '<C-n>', ':NERDTreeFocus<CR>', { silent = true})
+vim.api.nvim_set_keymap('', '<C-n>', ':NvimTreeToggle<CR>', { silent = true})

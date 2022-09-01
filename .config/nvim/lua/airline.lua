@@ -1,10 +1,5 @@
 -- Airline configuration
 
-require "paq" {
- 'vim-airline/vim-airline';
- 'vim-airline/vim-airline-themes';
-}
-
 vim.cmd([[
 " air-line
 let g:airline_powerline_fonts = 1
