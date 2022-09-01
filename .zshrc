@@ -9,7 +9,7 @@ export LC_ALL=en_US.UTF-8
 #source <(kubectl completion zsh)
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/oliver/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 DEFAULT_USER="$USER"
 ZSH_THEME="agnoster"
@@ -42,7 +42,7 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
