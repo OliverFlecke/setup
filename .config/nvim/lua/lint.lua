@@ -4,6 +4,8 @@ if not null_ls_status_ok then
 end
 
 local formatting = null_ls.builtins.formatting
+local diagnosticts = null_ls.builtins.diagnosticts
+local code_actions = null_ls.builtins.code_actions
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
@@ -11,6 +13,9 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
+		formatting.markdownlint_cli2,
+		diagnosticts.cspell,
+		code_actions.cspell,
 	},
 	-- you can reuse a shared lspconfig on_attach callback here
 	on_attach = function(client, bufnr)
