@@ -1,9 +1,8 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
 export PATH=/opt/homebrew/Cellar/openjdk/17.0.1_1/bin:$PATH
 export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
 export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:/home/oliver/.dotnet
 export LC_ALL=en_US.UTF-8
 
 #source <(kubectl completion zsh)
@@ -20,6 +19,7 @@ plugins=(
     git
     cp
     autojump
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -44,6 +44,7 @@ _dotnet_zsh_complete()
 compctl -K _dotnet_zsh_complete dotnet
 #source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm ba
 

@@ -4,7 +4,7 @@
 [color]
     status = always
 [core]
-    editor = nvim
+    editor = vim
     autocrlf = false
     attributesfile = ~/.gitattributes
     eol = lf
