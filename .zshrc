@@ -4,6 +4,7 @@ export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:/home/oliver/.dotnet
 export LC_ALL=en_US.UTF-8
+export APPDATA=/mnt/c/Users/olive/AppData/Roaming
 
 #source <(kubectl completion zsh)
 
@@ -11,7 +12,9 @@ export LC_ALL=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
 
 DEFAULT_USER="$USER"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL10K_SHORTEN_DIR_LENGTH=2
 
 HIST_STAMPS="yyyy-mm-dd"
 
