@@ -1,12 +1,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/projects/setup/scripts:$PATH
-export PATH=/opt/homebrew/Cellar/openjdk/17.0.1_1/bin:$PATH
-export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:/home/oliver/.dotnet
+#export PATH=/opt/homebrew/Cellar/openjdk/17.0.1_1/bin:$PATH
+#export PATH=/opt/homebrew/Cellar/python@3.10/3.10.1/bin/:$PATH
+#export PATH=$PATH:$(go env GOPATH)/bin
+#export PATH=$PATH:/home/oliver/.dotnet
 export LC_ALL=en_US.UTF-8
 export APPDATA=/mnt/c/Users/olive/AppData/Roaming
-
-#source <(kubectl completion zsh)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -19,10 +17,12 @@ POWERLEVEL10K_SHORTEN_DIR_LENGTH=2
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
-    git
-    cp
-    autojump
-    zsh-autosuggestions
+	git
+	cp
+	autojump
+	zsh-autosuggestions
+	docker
+	docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -46,6 +46,8 @@ _dotnet_zsh_complete()
 
 compctl -K _dotnet_zsh_complete dotnet
 #source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export GPG_TTY=$(tty)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
