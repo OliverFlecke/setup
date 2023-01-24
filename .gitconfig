@@ -4,7 +4,6 @@
 [includeIf "gitdir:~/projects/"]
 	path = "./.personal.gitconfig"
 [commit]
-	gpgSign = true
 [color]
 	status = always
 [core]
